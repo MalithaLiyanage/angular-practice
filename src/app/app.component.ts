@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basic-project';
+  showRecipe= true;
+
+  onNavigate(isRecipeView: boolean) {
+    this.showRecipe = isRecipeView;
+
+  }
 }
